@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+body{
+    width: 100vw;
+    height: 90vh;
+    margin-top: 10px;
+    background-color: goldenrod;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#palavra-chave {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    margin-top: 30px;
+}
+
+#img{
+    background-image: url("../img/forca.png");
+    width: 234px;
+    height: 272px;
+    background-repeat: no-repeat;
+}
+
+.letras{
+    width: 16px;
+    text-align: center;
+    border-bottom: 2px solid #8b008b;
+    color: #ffffff;
+    padding: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#teclado{
+    margin-top: 30px;
+}
+
+.teclas button{
+    width: 24px;
+    height: 24px;
+    margin: 2px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    box-shadow: 0px 2px 8px dimgray;
+    border-radius: 5px;
+    border: 1px solid dimgray;
+    color:#8b008b;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+}
+.teclas button:disabled {
+    cursor: not-allowed
+}
+.teclas button:hover{
+    transform: scale(1.4);
+}
+
+#dica {
+    margin-top: 30px;
+    color: #8b008b;
+    font-size: 1.2em;
+}
+
+@media (min-width: 321px){
+    .teclas button{
+        width: 25px;
+        height: 25px;   
+    }
+   #dica{
+    font-size: 1.3em;
+   } 
+}
+
+@media (min-width: 376px){
+    .teclas button{
+        width: 30px;
+        height: 30px;   
+    }
+    #palavra-chave{
+        font-size: 1.3em;
+    }
+    .letras{
+        width: 18px;
+    }
+   #dica{
+    font-size: 1.5em;
+   } 
+}
+
+@media (min-width: 426px){
+    .teclas button{
+        width: 36px;
+        height: 36px;   
+    }
+    #palavra-chave{
+        font-size: 1.5em;
+    }
+    .letras{
+        width: 20px;
+    }
+   #dica{
+    font-size: 1.6em;
+   } 
+}
+@media (min-width: 769px){
+    .teclas button{
+        width: 68px;
+        height: 68px;  
+        font-size: 2em; 
+    }
+    #palavra-chave{
+        font-size: 3.5em;
+    }
+    .letras{
+        width: 35px;
+    }
+   #dica{
+    font-size: 2em;
+   } 
+}
